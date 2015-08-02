@@ -1,0 +1,72 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="src/rating.css">
+    <link rel="stylesheet" type="text/css" href="src/support.css">
+
+    <script src="src/tap.mod.js"></script>
+
+    <script src="main.js"></script>
+	<script src="words.js"></script>
+    <script src="src/rating.js"></script>
+    <script src="src/support.js"></script>
+    <script src="src/ttc.js"></script>
+</head>
+<body>
+    <div id="main_menu" class="page">
+        <div class="header">
+            <div>
+                <script>document.write(eng[0]);</script>
+            </div>
+            <div id="add">
+                <img class="go" data-page="add_menu" src="img/plus.png" />
+            </div>
+        </div>
+        
+        <div id="main_window">
+
+        </div>
+    </div><!-- first_menu -->
+    <div id="add_menu" class="page">
+        <div class="header">
+            <div id="back" >
+                <img ontouchend="do_cancel();" src="img/back.png" />
+            </div>
+            <div>
+				<script>document.write(eng[1]);</script>
+			</div>
+            <div id="save">
+                <img ontouchend="do_add();" src="img/save.png"/>
+            </div>
+        </div>
+        <div id="add_window">
+            <input id="title" type="text" placeholder="Title..." maxlength="20" />
+            <textarea id="note" rows="11" placeholder="Text..."></textarea>
+			<div id="mark">
+				<input type="checkbox" class="checkbox" id="checkbox"/>
+				<label for="checkbox"><script>document.write(eng[4]);</script></label>
+			</div>
+            <div id="delete" ontouchend="do_delete();"><script>document.write(eng[5]);</script></div><br /><br />
+        </div>
+    </div><!-- second_menu -->
+    <div id="view_menu" class="page">
+		<div class="header">
+			<div class="back" >
+                <img class="go" data-page="main_menu" src="img/back.png" />
+            </div>
+			<div>
+				<script>document.write(eng[7]);</script>
+			</div>
+			<div id="edit">
+                <img ontouchend="do_edit();" src="img/pencil.png"/>
+            </div>
+		</div>
+		<div id="view_window">
+		
+		</div>
+    </div><!-- view_menu -->
+</body>
+</html>
