@@ -1,5 +1,5 @@
-Simple app for making notes. Works on touch devices only.
+#Simple app for making notes. Works on touch devices only.
 
 Open index.html to run.
 
-Developed by Chupin D.O.
+###Developed by Chupin D.O.
